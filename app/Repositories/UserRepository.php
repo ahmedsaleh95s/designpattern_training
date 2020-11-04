@@ -4,8 +4,9 @@ namespace App\Repositories;
 
 use App\Models\User;
 use Illuminate\Support\Collection;
+use App\Repositories\UserRepositoryInterface;
 
-class UserRepository
+class UserRepository implements UserRepositoryInterface
 {
 
    protected $model;
